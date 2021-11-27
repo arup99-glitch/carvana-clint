@@ -1,0 +1,12 @@
+
+
+.card-Details{
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background-color: rgb(238, 11, 11);
+}
+
+.card-Details:hover {
+  box-shadow: 0px 0px 8px 2px #f0f4f5fb;
+  transform: scale(1.01)
+}

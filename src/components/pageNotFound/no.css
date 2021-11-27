@@ -1,0 +1,8 @@
+.logo {
+  font-size: 200px;
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    font-size: 100px;
+  }
+}

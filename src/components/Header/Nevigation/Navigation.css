@@ -1,0 +1,18 @@
+.height {
+  height: 250px;
+}
+.navlink {
+  text-decoration: none;
+  margin: 0px 10px;
+  font-size: 20px;
+}
+.zIndex {
+  z-index: 50;
+}
+.btnclr{
+  background-color:#316B83 !important;
+}
+.name-clr{
+  background-color:#6B7AA1 !important;
+}
+
