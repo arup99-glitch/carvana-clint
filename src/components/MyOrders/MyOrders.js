@@ -8,7 +8,7 @@ const MyOrders = () => {
   const { user } = useAuth();
   const [myOrders, setMyOrders] = useState([]);
   const email = user.email;
-  const url = `https://nameless-badlands-69800.herokuapp.com/user/${email}`;
+  const url = `https://carnava-server-production.up.railway.app/user/${email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -23,7 +23,7 @@ const MyOrders = () => {
   const deleteOrder = (id) => {
     const confirmation = window.confirm("are you sure want to delete?");
     if (confirmation) {
-      const url = `https://nameless-badlands-69800.herokuapp.com/myOrders/${id}`;
+      const url = `https://carnava-server-production.up.railway.app/myOrders/${id}`;
       fetch(url, {
         method: "DELETE",
       })

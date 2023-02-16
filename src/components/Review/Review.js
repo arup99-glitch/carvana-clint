@@ -15,7 +15,7 @@ const Review = () => {
       description: descriptionRef.current.value,
       rating,
     };
-    fetch("https://nameless-badlands-69800.herokuapp.com/reviews", {
+    fetch("https://carnava-server-production.up.railway.app/reviews", {
       method: "POST",
       headers: {
         "content-type": "application/json",

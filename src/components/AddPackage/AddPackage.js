@@ -23,7 +23,7 @@ const AddPackage = () => {
       status: true,
     };
 
-    fetch("https://nameless-badlands-69800.herokuapp.com/addPackage", {
+    fetch("https://carnava-server-production.up.railway.app/addPackage", {
       method: "POST",
       headers: {
         "content-type": "application/json",

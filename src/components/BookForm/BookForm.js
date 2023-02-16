@@ -18,7 +18,7 @@ const BookForm = () => {
   const [pack, setPack] = useState({});
   const { name, description, image, price } = pack;
   useEffect(() => {
-    fetch(`https://nameless-badlands-69800.herokuapp.com/productBy/${id}`)
+    fetch(`https://carnava-server-production.up.railway.app/productBy/${id}`)
       .then((res) => res.json())
       .then((data) => setPack(data));
   }, [id]);
@@ -41,7 +41,7 @@ const BookForm = () => {
       pack,
       isPending,
     };
-    fetch("https://nameless-badlands-69800.herokuapp.com/orders", {
+    fetch("https://carnava-server-production.up.railway.app/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",

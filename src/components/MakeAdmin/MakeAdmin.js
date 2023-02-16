@@ -8,7 +8,7 @@ const MakeAdmin = () => {
   };
   const handelSubmit = (e) => {
     const user = { email };
-    fetch("https://nameless-badlands-69800.herokuapp.com/make/admin", {
+    fetch("https://carnava-server-production.up.railway.app/make/admin", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

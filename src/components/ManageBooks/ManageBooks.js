@@ -8,7 +8,7 @@ const ManageBooks = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     setIsLoading(true);
-    fetch(`https://nameless-badlands-69800.herokuapp.com/tickets`)
+    fetch(`https://carnava-server-production.up.railway.app/tickets`)
       .then((res) => res.json())
       .then((data) => setTickets(data))
       .finally(() => {
@@ -18,7 +18,7 @@ const ManageBooks = () => {
 
   const updateStatus = (id) => {
     const bool = { status: false };
-    fetch(`https://nameless-badlands-69800.herokuapp.com/update/${id}`, {
+    fetch(`https://carnava-server-production.up.railway.app/update/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -38,7 +38,7 @@ const ManageBooks = () => {
   const deleteTicket = (id) => {
     const confirmation = window.confirm("are you sure want to delete?");
     if (confirmation) {
-      const url = `https://nameless-badlands-69800.herokuapp.com/myOrders/${id}`;
+      const url = `https://carnava-server-production.up.railway.app/myOrders/${id}`;
       fetch(url, {
         method: "DELETE",
       })

@@ -33,7 +33,7 @@ const LoggIn = () => {
 
   const saveUser = (email, displayName, method) => {
     const user = { email, displayName };
-    fetch("https://nameless-badlands-69800.herokuapp.com/users", {
+    fetch("https://carnava-server-production.up.railway.app/users", {
       method: method,
       headers: {
         "content-type": "application/json",

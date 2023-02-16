@@ -8,7 +8,7 @@ const Reviews = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch("https://nameless-badlands-69800.herokuapp.com/reviews")
+    fetch("https://carnava-server-production.up.railway.app/reviews")
       .then((res) => res.json())
       .then((data) => {
         setReviews(data);

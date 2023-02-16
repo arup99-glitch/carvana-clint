@@ -7,7 +7,7 @@ const Packages = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     setIsLoading(true);
-    fetch("https://nameless-badlands-69800.herokuapp.com/packages")
+    fetch("https://carnava-server-production.up.railway.app/packages")
       .then((res) => res.json())
       .then((data) => {
         setPackages(data);

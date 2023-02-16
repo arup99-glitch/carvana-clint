@@ -43,7 +43,7 @@ const useFirebase = () => {
   }, [auth]);
 
   useEffect(() => {
-    fetch(`https://nameless-badlands-69800.herokuapp.com/users/${user.email}`)
+    fetch(`https://carnava-server-production.up.railway.app/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => {
         setAdmin(data.admin);

@@ -1,0 +1,30 @@
+[debug] [2023-02-16T18:52:51.917Z] ----------------------------------------------------------------------
+[debug] [2023-02-16T18:52:51.919Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\arupc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-02-16T18:52:51.920Z] CLI Version:   11.23.1
+[debug] [2023-02-16T18:52:51.920Z] Platform:      win32
+[debug] [2023-02-16T18:52:51.920Z] Node Version:  v16.13.2
+[debug] [2023-02-16T18:52:51.921Z] Time:          Fri Feb 17 2023 00:52:51 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-02-16T18:52:51.921Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-16T18:52:52.005Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-16T18:52:52.006Z] > authorizing via signed-in user (arupchakraborty153@gmail.com)
+[debug] [2023-02-16T18:52:52.006Z] [iam] checking project jaguar-authentication for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-02-16T18:52:52.009Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/jaguar-authentication:testIamPermissions [none]
+[debug] [2023-02-16T18:52:52.009Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/jaguar-authentication:testIamPermissions x-goog-quota-user=projects/jaguar-authentication
+[debug] [2023-02-16T18:52:52.009Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/jaguar-authentication:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-02-16T18:52:53.515Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/jaguar-authentication:testIamPermissions 200
+[debug] [2023-02-16T18:52:53.516Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/jaguar-authentication:testIamPermissions {}
+[debug] [2023-02-16T18:52:53.517Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project jaguar-authentication:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-02-16T18:52:53.519Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jaguar-authentication [none]
+[debug] [2023-02-16T18:52:54.202Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jaguar-authentication 403
+[debug] [2023-02-16T18:52:54.203Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jaguar-authentication {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-02-16T18:52:54.204Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-02-16T18:52:54.452Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\arupc\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\arupc\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project jaguar-authentication. Please make sure the project exists and your account has permission to access it.
